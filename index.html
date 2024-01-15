@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Push Repo In Git</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0%;
+        }
+        
+        header{
+            position: sticky;
+            top: 0;
+            background-color: rgb(97, 42, 42);
+            width: 100%;
+            color: white;
+        }
+        header img{
+            height: 100px;
+            width: 100px;
+            border-radius: 20px;
+        }
+
+        main{
+            background-color: rgba(0, 0, 0, 0.801);
+            color: white;
+            padding: 12px 16px;
+        }
+        main h1{
+            text-align: center;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+
+        footer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            height: 30px;
+            width: 100%;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="help.png" alt="">
+    </header>
+    <main>
+        <section class="first">
+            <h1>Upload files on git if it give this error (GitHub "fatal: remote origin already exists")</h1>
+            <ul>
+                <li>git init</li>
+                <li>git add . </li>
+                <li>git commit -m "project name"</li>
+                <li>git remote rm origin</li>
+                <li>git remote add origin git@github.com:govindpal5101999/store-app.git</li>
+                <li>git push -u github master</li>
+            </ul>
+        </section>
+        <section class="second">
+            <h1>Update existing project</h1>
+            <ul>
+                <li>git add . </li>
+                <li>git status</li>
+                <li>git commit -m "commit name"</li>
+                <li>git push origin master</li>
+            </ul>
+        </section>
+        <section class="third">
+            <h1>If error comes then try (Not committing merge; use 'git commit' to complete the merge.)</h1>
+            <ul>
+                <li>git fetch origin master</li>
+                <li>git pull origin master</li>
+                <li>git commit -m "commit name"</li>
+                <li>git add .</li>
+                <li>git commit -m 'your commit message'</li>
+                <li>git push origin master</li>
+            </ul>
+        </section>
+        <section class="fourth">
+            <h1>Shorthand or With Clone Repository</h1>
+            <ul>
+                <li>git clone "your link ex-https://github.com/govindpal5101999/hotproperty.git"</li>
+                <li>move code into generated folder</li>
+                <li>go into the generated folder</li>
+                <li>git add .</li>
+                <li>git status</li>
+                <li>git commit -m "first commit"</li>
+                <li>git push</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &COPY; 2024. All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
